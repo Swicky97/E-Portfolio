@@ -25,17 +25,26 @@ li {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.click {
+  cursor: pointer;
+}
+
+/* NAVIGATION */
 nav {
   height: 80px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: aqua;
   position: relative;
+  z-index: 1;
 }
 
 .nav__container {
   width: 100%;
-  max-width: 1200px;
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
@@ -56,7 +65,7 @@ nav {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  padding: 8px;
+  padding: 16px;
 }
 
 .nav__a {
@@ -70,6 +79,62 @@ nav {
   border: none;
   color: black;
   display: none;
+}
+
+/* LANDING */
+#landing {
+  min-height: 100vh - 80px;
+}
+
+.header__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+}
+
+.header__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.40);
+}
+
+.landing__title {
+  font-size: 120px;
+}
+
+.red {
+  color: red;
+}
+
+.header__para {
+  font-size: 24px;
+  line-height: 2;
+  max-width: 450px;
+}
+
+.social__list {
+  margin-top: 16px;
+  display: flex;
+}
+
+.social__link {
+  background-color:red;
+  color: white;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
@@ -89,21 +154,6 @@ nav {
   button {
     font-size: 18px;
   }
-
-  .card {
-    width: 50%;
-  }
-
-  .card__selected {
-    flex-direction: column;
-  }
-  .card__selected--figure {
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .card__selected--description {
-    width: 100%;
-  }
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES */
@@ -114,20 +164,5 @@ nav {
 
   .nav__link {
     display: none;
-  }
-
-  .highlight {
-    width: 100%;
-  }
-
-  .highlight:not(:last-child) {
-    margin-bottom: 24px;
-  }
-
-  .cart__card--img {
-    display: none;
-  }
-  .cart__card--info {
-    padding-left: 0;
   }
 }
