@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Mail from './Mail';
 
 export default function Landing() {
   return (
@@ -23,6 +24,7 @@ export default function Landing() {
             <a
               href="https://github.com/Swicky97"
               target="_blank"
+              rel="noreferrer"
               class="social__link click"
             >
               <FontAwesomeIcon icon="fab fa-github" />
@@ -30,6 +32,7 @@ export default function Landing() {
             <a
               href="https://www.linkedin.com/in/chase-swick-bb94ba233/"
               target="_blank"
+              rel="noreferrer"
               class="social__link click"
             >
               <FontAwesomeIcon icon="fab fa-linkedin" />
@@ -44,6 +47,7 @@ export default function Landing() {
           </div>
         </div>
       </header>
+      <Mail />
     </section>
   );
 }

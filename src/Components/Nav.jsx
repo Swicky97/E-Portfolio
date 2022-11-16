@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -28,12 +28,12 @@ export default function Nav() {
             </Link>
           </li>
           <li className="nav__link">
-            <Link to="/" className="nav__a">
+            <Link to="/personal" className="nav__a">
               Personal Life
             </Link>
           </li>
           <li className="nav__link">
-            <Link to="/" className="nav__a">
+            <Link to="/contact" className="nav__a">
               Contact
             </Link>
           </li>
