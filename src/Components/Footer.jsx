@@ -6,11 +6,11 @@ export default function Footer() {
     <footer>
       <div className="footer__container">
         <div className="row row__column">
-          <Link to="/">
+          <a href="#top">
             <figure className="footer__logo">
-              <img src="images/CS-logo.jpeg" className="footer__logo--img" alt="" />
+              <img src="images/CS-logo.jpeg" className="logo" alt="" />
             </figure>
-          </Link>
+          </a>
           <div className="footer__list">
             <Link to="/" className="footer__link">
               Home
