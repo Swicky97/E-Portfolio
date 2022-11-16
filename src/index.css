@@ -39,6 +39,10 @@ button {
   cursor: pointer;
 }
 
+.click:hover {
+  transform: scale(1.1);
+}
+
 .container {
   padding: 56px 0;
 }
@@ -60,13 +64,29 @@ button {
   color: midnightblue;
 }
 
+.arrow {
+  animation: left 3s infinite alternate;
+  position: relative;
+  right: -8px;
+}
+@keyframes left {
+  0% {
+    opacity: 0%;
+    transform: translateX(3px)
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(-3px);
+  }
+}
+
 /* NAVIGATION */
 nav {
   height: 80px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: whitesmoke;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav__container {
@@ -118,8 +138,6 @@ nav {
   margin: 0 auto;
   display: flex;
   margin-top: 100px;
-  position: relative;
-  left: -160px;
   flex-direction: column;
   justify-content: space-around;
   align-items: right;
@@ -140,6 +158,10 @@ nav {
 
 .landing__a {
   text-decoration: none;
+}
+
+.landing__a:hover {
+  transform: scale(1.1);
 }
 
 .header__para {
@@ -300,6 +322,7 @@ nav {
 
 footer {
   background-color: whitesmoke;
+  z-index: 1;
 }
 
 .footer__logo {
@@ -321,6 +344,9 @@ footer {
 
 .footer__list {
   margin: 20px 0 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer__link {
@@ -353,6 +379,10 @@ footer {
   }
 
   .nav__link {
+    display: none;
+  }
+
+  .mail__btn {
     display: none;
   }
 }

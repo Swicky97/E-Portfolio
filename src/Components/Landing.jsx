@@ -18,7 +18,7 @@ export default function Landing() {
           <br />
           Here's a bit more{" "}
           <a href="#about" className="landing__a">
-            <b class="blue click">about me.</b>
+            <b class="blue click">about me.</b>{" "}<FontAwesomeIcon icon="arrow-left" className="arrow"/>
           </a>
         </p>
         <div class="social__list">

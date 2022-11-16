@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
           I'm a 25 year-old Full Stack Software Engineer with experience
           developing personal and professional websites with a diverse
           <a href="#tech" className="about__a">
-          <b className="blue click"> technology stack.</b>
+          <b className="blue click"> technology stack.</b><FontAwesomeIcon icon="arrow-left" className="arrow"/>
           </a>
           
         </p>

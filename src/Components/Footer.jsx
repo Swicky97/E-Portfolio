@@ -12,9 +12,6 @@ export default function Footer() {
             </figure>
           </a>
           <div className="footer__list">
-            <Link to="/" className="footer__link">
-              Home
-            </Link>
             <Link to="/projects" className="footer__link">
               Projects
             </Link>
