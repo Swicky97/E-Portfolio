@@ -5,14 +5,14 @@ import Mail from "./Mail";
 export default function Landing() {
   return (
     <section id="landing">
-      <div className="header__container">
-        <div className="header__img--container">
-          <h1 className="landing__title">
-            Hello <img src="images/Chase.jpeg" alt="" className="header__img" />
+      <div className="landing__container">
+        <div className="landing__img--container">
+          <h1 className="landing__title--intro">
+            Hello <img src="images/Chase.jpeg" alt="" className="landing__img" />
           </h1>
         </div>
         <h1 className="landing__title blue">I'm Chase.</h1>
-        <p className="header__para">
+        <p className="landing__para">
           I'm a <b className="blue">Full Stack Software Engineer</b> with a
           passion for building web applications and improving user experience.
           <br />

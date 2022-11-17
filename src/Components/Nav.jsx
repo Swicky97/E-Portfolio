@@ -23,11 +23,6 @@ export default function Nav() {
             </Link>
           </li>
           <li className="nav__link">
-            <Link to="/about" className="nav__a">
-              About
-            </Link>
-          </li>
-          <li className="nav__link">
             <Link to="/personal" className="nav__a">
               Personal Life
             </Link>
