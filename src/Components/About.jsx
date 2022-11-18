@@ -25,7 +25,6 @@ export default function About() {
           <a href="#tech" className="about__a">
           <b className="blue click"> technology stack.</b><FontAwesomeIcon icon="arrow-left" className="arrow"/>
           </a>
-          
         </p>
       </div>
     </section>

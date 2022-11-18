@@ -2,7 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Nav({ setShowModal }) {
+export default function Nav({ setShowModal, toggleContrast }) {
+  function openMenu() {
+    document.body.classList += " menu--open";
+  }
+
+  function closeMenu() {
+    document.body.classList.remove("menu--open");
+  }
+
   return (
     <nav>
       <div className="nav__container">
@@ -28,14 +36,41 @@ export default function Nav({ setShowModal }) {
             </a>
           </li>
           <li className="nav__link">
-            <Link to="/" className="nav__a">
+            <a href="#" className="nav__a" onClick={() => toggleContrast()}>
               <FontAwesomeIcon icon="circle-half-stroke" />
-            </Link>
+            </a>
           </li>
-          <button className="btn__menu">
+          <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
         </ul>
+        <div className="menu__backdrop">
+          <button className="btn__menu btn__menu--close">
+            <FontAwesomeIcon icon="fa-times" />
+          </button>
+          <ul className="menu__links">
+            <li className="menu__list">
+              <Link to="/" className="menu__link">
+                Home
+              </Link>
+            </li>
+            <li className="menu__list">
+              <Link to="/books" className="menu__link">
+                Projects
+              </Link>
+            </li>
+            <li className="menu__list">
+              <a href="#" className="menu__link" onClick={() => setShowModal(true)}>
+                Contact
+              </a>
+            </li>
+            <li className="menu__list">
+              <a href="#" className="menu__link" onClick={() => setShowModal(true)}>
+                Dark Mode
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

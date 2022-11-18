@@ -14,14 +14,14 @@ export default function Modal({ setShowModal }) {
         </h4>
         <p className="modal__para">
           I trained at Revature as a{" "}
-          <b className="blue">full stack Java developer</b> improving my
+          <b className="blue--modal">full stack Java developer</b> improving my
           proficiency in Spring Boot, Angular, and AWS.
           <br />
           In my spare time I recently completed a 6 week coding bootcamp,{" "}
-          <b className="blue">Frontend Simplified</b>, to hone my knowledge in
+          <b className="blue--modal">Frontend Simplified</b>, to hone my knowledge in
           HTML5, CSS3, and React.
           <br />I am currently working on a personal project in the{" "}
-          <b className="blue">.NET technology stack. </b>
+          <b className="blue--modal">.NET technology stack. </b>
         </p>
         <div className="modal__languages">
           <figure className="modal__language">
