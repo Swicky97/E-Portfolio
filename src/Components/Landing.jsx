@@ -1,8 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Mail from "./Mail";
+import Modal from "./Modal";
 
-export default function Landing() {
+export default function Landing( {setShowModal }) {
   return (
     <section id="landing">
       <div className="landing__container">
@@ -47,7 +48,6 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      <Mail />
     </section>
   );
 }
