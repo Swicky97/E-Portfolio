@@ -1,9 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Mail from "./Mail";
-import Modal from "./Modal";
 
-export default function Landing( {setShowModal }) {
+export default function Landing() {
   return (
     <section id="landing">
       <div className="landing__container">

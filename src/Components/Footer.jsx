@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer({ setShowModal }) {
   return (
     <footer>
       <div className="footer__container">
@@ -12,18 +12,15 @@ export default function Footer() {
             </figure>
           </a>
           <div className="footer__list">
+            <Link to="/" className="footer__link">
+              Home
+            </Link>
             <Link to="/projects" className="footer__link">
               Projects
             </Link>
-            <Link to="/about" className="footer__link">
-              About
-            </Link>
-            <Link to="/personal" className="footer__link">
-              Personal Life
-            </Link>
-            <Link to="/contact" className="footer__link">
+            <a href="#" className="footer__link" onClick={() => setShowModal(true)}>
               Contact
-            </Link>
+            </a>
           </div>
           <div className="footer__copyright">
             Copyright &copy; 2022 Chase Swick

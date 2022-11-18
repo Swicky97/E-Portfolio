@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Nav() {
+export default function Nav({ setShowModal }) {
   return (
     <nav>
       <div className="nav__container">
@@ -23,14 +23,9 @@ export default function Nav() {
             </Link>
           </li>
           <li className="nav__link">
-            <Link to="/personal" className="nav__a">
-              Personal Life
-            </Link>
-          </li>
-          <li className="nav__link">
-            <Link to="/contact" className="nav__a">
+            <a href="#" className="nav__a" onClick={() => setShowModal(true)}>
               Contact
-            </Link>
+            </a>
           </li>
           <li className="nav__link">
             <Link to="/" className="nav__a">

@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import Footer from "./Components/Footer";
 import Modal from "./Components/Modal";
 import Mail from "./Components/Mail";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -13,12 +14,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav />
+        <ScrollToTop />
+        <Nav setShowModal={setShowModal}/>
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
         </Routes>
-        <Footer />
+        <Footer setShowModal={setShowModal}/>
       </Router>
       <Mail setShowModal={setShowModal}/>
       {showModal && <Modal setShowModal={setShowModal}/>}
