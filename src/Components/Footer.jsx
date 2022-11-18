@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Footer({ setShowModal }) {
+export default function Footer({ setShowModal, toggleContrast }) {
   return (
     <footer>
       <div className="footer__container">

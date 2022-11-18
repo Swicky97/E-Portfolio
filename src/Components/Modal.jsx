@@ -14,7 +14,7 @@ export default function Modal({ setShowModal }) {
         </h4>
         <p className="modal__para">
           I trained at Revature as a{" "}
-          <b className="blue--modal">full stack Java developer</b> improving my
+          <b className="blue--modal">full stack Java developer</b> in a 10 week course improving my
           proficiency in Spring Boot, Angular, and AWS.
           <br />
           In my spare time I recently completed a 6 week coding bootcamp,{" "}

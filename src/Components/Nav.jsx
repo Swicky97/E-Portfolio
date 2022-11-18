@@ -46,27 +46,27 @@ export default function Nav({ setShowModal, toggleContrast }) {
         </ul>
         <div className="menu__backdrop">
           <button className="btn__menu btn__menu--close">
-            <FontAwesomeIcon icon="fa-times" />
+            <FontAwesomeIcon icon="fa-times" onClick={closeMenu}/>
           </button>
           <ul className="menu__links">
             <li className="menu__list">
-              <Link to="/" className="menu__link">
+              <Link to="/" className="menu__link" onClick={closeMenu}>
                 Home
               </Link>
             </li>
             <li className="menu__list">
-              <Link to="/books" className="menu__link">
+              <Link to="/projects" className="menu__link" onClick={closeMenu}>
                 Projects
               </Link>
             </li>
             <li className="menu__list">
-              <a href="#" className="menu__link" onClick={() => setShowModal(true)}>
+              <a href="#" className="menu__link" onClick={() => { setShowModal(true); closeMenu(); }}>
                 Contact
               </a>
             </li>
             <li className="menu__list">
-              <a href="#" className="menu__link" onClick={() => setShowModal(true)}>
-                Dark Mode
+              <a href="#" className="menu__link" onClick={() => { toggleContrast(); closeMenu(); }}>
+                Toggle Dark Mode
               </a>
             </li>
           </ul>
