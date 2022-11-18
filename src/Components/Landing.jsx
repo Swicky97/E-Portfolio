@@ -38,7 +38,7 @@ export default function Landing() {
             <FontAwesomeIcon icon="fab fa-linkedin" />
           </a>
           <a
-            href="images/My-Resume.pdf"
+            href="images/Chase Swick Resume.docx"
             target="_blank"
             class="social__link click"
           >
